@@ -1,0 +1,45 @@
+body {
+  font-family: "Cabin", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5; }
+
+#__bs_notify__ {
+  display: none !important; }
+
+h1 {
+  color: #053861;
+  font-size: 52px;
+  font-family: 600; }
+
+h2 {
+  color: #64A70B;
+  font-size: 40px; }
+
+h3 {
+  color: #64A70B;
+  font-size: 23px; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+  ul li {
+    margin: 0;
+    margin-bottom: 16px; }
+
+nav {
+  background: #004B87;
+  color: #fff; }
+  nav a {
+    color: #fff; }
+
+section {
+  margin: 100px 0; }
+
+footer {
+  color: #fff;
+  background: #053861;
+  padding: 60px 0; }
+  footer a {
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */

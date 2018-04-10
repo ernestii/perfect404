@@ -1,0 +1,68 @@
+$green: #64A70B;
+$blue: #004B87;
+$darkblue: #053861;
+$light: #FCFCFC;
+$light2: #F5F5F5;
+
+body {
+  font-family: "Cabin", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+#__bs_notify__ { display: none !important; }
+
+h1 {
+  color: $darkblue;
+  font-size: 52px;
+  font-family: 600;
+}
+
+h2 {
+  color: $green;
+  font-size: 40px;
+}
+
+h3 {
+  color: $green;
+  font-size: 23px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  li {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+
+header {
+  
+}
+
+nav {
+  background: $blue;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+section {
+  &.not-found {
+    
+  }
+
+  margin: 100px 0;
+}
+
+footer {
+  color: #fff;
+  background: $darkblue;
+  padding: 60px 0;
+  
+  a {
+    color: #fff;
+  }
+}

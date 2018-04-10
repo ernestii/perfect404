@@ -1,0 +1,12 @@
+{
+  "name": "perfect404",
+  "version": "1.0.0",
+  "description": "Assignment 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pug *.pug -w --pretty & sass --watch ./css & lite-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
