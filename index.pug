@@ -13,108 +13,121 @@ html(lang="en")
     header
       .container
         .row
-          .col-9 logo
-          .col-3 search
+          .col-9: .logo
+            a(href="/"): img(src="images/logo.svg" alt="Georgian College Logo")
+          .col-3: .search
+            input(type="text" placeholder="Search...")
 
     // Navigation
     nav
       .container
         .row
-          .col-10 links
-          .col-2 login
+          .col-9
+            ul.nav
+              li: a(href="#") Academics
+              li: a(href="#") Admissions
+              li: a(href="#") Finance and fees
+              li: a(href="#") Student life
+              li: a(href="#") Community
+              li: a(href="#") About us
+          .col-3
+            .login
+              a(href="#") Login
 
     // Section 404
     section.not-found
       .container
         .row
           .col-1
-          .col-2 icon
+          .col-2: img(src="images/not-found.svg" alt="Page not found")
           .col-7
-            h1 Page not found
+            h1 Page is not found
+            p The page you requested was not found. Try to do the following:
             ol
-              li Check you link
+              li Check you link for typos and errors.
+              li If you received this link from the college, contact and ask for another link.
+              li Search what you want to find.
 
     // Search & Broken link
     section.broken-link
       .container
         .row
           .col-3
-          .col-7
+          .col-6
             form.search(action="" method="get")
               input.form-control(type="text" placeholder="Search...")
             hr
-            .row
+            .row.report
               .col-8
                 label Do you think this page should be up?
-              .col-4
+              .col-4.text-right
                 a.btn.btn-secondary(href="#") Report broken link
 
     // Useful links
-    section.userful-links
+    section.useful-links
       .container
         h2 Useful links
         .row
           .col-4
             h3 For students
-            ul
+            ul.list
               li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
+              li: a(href="#") Browse events and important dates
+              li: a(href="#") Learn about campus services
+              li: a(href="#") New students orientation
+              li: a(href="#") Office of the registar
           .col-4
             h3 For future students
-            ul
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
+            ul.list
+              li: a(href="#") Academic programs
+              li: a(href="#") Admissions
+              li: a(href="#") International students
+              li: a(href="#") Campuses
+              li: a(href="#") Tuitions
           .col-4
             h3 For parents and guardians
-            ul
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
-              li: a(href="#") Log in to college services
+            ul.list
+              li: a(href="#") Preparation courses
+              li: a(href="#") Student life
+              li: a(href="#") Safety and security
+              li: a(href="#") Campus services
+              li: a(href="#") Accomodations
 
 
     // Footer
     footer
       .container
-        .logo georgian-logo
+        .logo: img(src="images/logo-light.svg" alt="Georgian College Logo")
         .row
           .col-2
-            ul
-              li(a href="#") Link
-              li(a href="#") Link
-              li(a href="#") Link
+            ul.list
+              li: a(href="#") Orillia
+              li: a(href="#") Owen Sound
+              li: a(href="#") South Georgian Bay
+              li: a(href="#") Orangeville
           .col-2
-            ul
-              li(a href="#") Link
-              li(a href="#") Link
-              li(a href="#") Link
+            ul.list
+              li: a(href="#") Barrie
+              li: a(href="#") Midland
+              li: a(href="#") Muskoka
           .col-2
-            ul
-              li(a href="#") Link
-              li(a href="#") Link
-              li(a href="#") Link
+            ul.list
+              li: a(href="#") Future students
+              li: a(href="#") Current students
+              li: a(href="#") Alumni
+              li: a(href="#") International
           .col-2
-            ul
-              li(a href="#") Link
-              li(a href="#") Link
-              li(a href="#") Link
-          .col-2
-            ul
-              li(a href="#") Link
-              li(a href="#") Link
-              li(a href="#") Link
-          .col-4
+            ul.list.social-links
+              li: a(href="#") Facebook
+              li: a(href="#") LinkedIn
+              li: a(href="#") Youtube
+              li: a(href="#") Twitter
+              li: a(href="#") Instagram
+          .col-4.address
             p One Georgian Dr., Barrie ON L4M 3X9
             p 705.728.1968 
-            p inquire@georgiancollege.a
-        p Copyright 2018 Georgian College.
+            p inquire@georgiancollege.ca
+        .copyright Copyright 2018 Georgian College.
               
 
     // Bootstrap scripts
