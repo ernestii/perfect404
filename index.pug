@@ -13,16 +13,16 @@ html(lang="en")
     header
       .container
         .row
-          .col-9: .logo
+          .col-7.col-md-9: .logo
             a(href="/"): img(src="images/logo.svg" alt="Georgian College Logo")
-          .col-3: .search
+          .col-5.col-md-3: .search
             input(type="text" placeholder="Search...")
 
     // Navigation
     nav
       .container
         .row
-          .col-9
+          .col-12.col-sm-9
             ul.nav
               li: a(href="#") Academics
               li: a(href="#") Admissions
@@ -30,7 +30,7 @@ html(lang="en")
               li: a(href="#") Student life
               li: a(href="#") Community
               li: a(href="#") About us
-          .col-3
+          .col-3.d-sm-block.d-none
             .login
               a(href="#") Login
 
@@ -38,9 +38,8 @@ html(lang="en")
     section.not-found
       .container
         .row
-          .col-1
-          .col-2: img(src="images/not-found.svg" alt="Page not found")
-          .col-7
+          .image.col-12.col-sm-2.offset-sm-1: img(src="images/not-found.svg" alt="Page not found")
+          .col-12.col-sm-7
             h1 Page is not found
             p The page you are looking for was not found. The page might be deleted or outdated, or there is an error in the URL.
             
@@ -59,15 +58,14 @@ html(lang="en")
     section.broken-link
       .container
         .row
-          .col-3
-          .col-6
+          .col-md-6.offset-md-3.col-12
             form.search(action="" method="get")
               input.form-control(type="text" placeholder="Search...")
             hr
             .row.report
-              .col-8
+              .col-md-8.col-12
                 label Do you think this page should be up?
-              .col-4.text-right
+              .col-md-4.col-12.text-right
                 a.btn.btn-secondary(href="#") Report broken link
 
     // Useful links
@@ -75,7 +73,7 @@ html(lang="en")
       .container
         h2 Useful links
         .row
-          .col-4
+          .col-12.col-md-4
             h3 For students
             ul.list
               li: a(href="#") Log in to college services
@@ -83,7 +81,7 @@ html(lang="en")
               li: a(href="#") Learn about campus services
               li: a(href="#") New students orientation
               li: a(href="#") Office of the registar
-          .col-4
+          .col-12.col-md-4
             h3 For future students
             ul.list
               li: a(href="#") Academic programs
@@ -91,7 +89,7 @@ html(lang="en")
               li: a(href="#") International students
               li: a(href="#") Campuses
               li: a(href="#") Tuitions
-          .col-4
+          .col-12.col-md-4
             h3 For parents and guardians
             ul.list
               li: a(href="#") Preparation courses
@@ -106,31 +104,31 @@ html(lang="en")
       .container
         .logo: img(src="images/logo-light.svg" alt="Georgian College Logo")
         .row
-          .col-2
+          .col-6.col-md-2
             ul.list
               li: a(href="#") Orillia
               li: a(href="#") Owen Sound
               li: a(href="#") South Georgian Bay
               li: a(href="#") Orangeville
-          .col-2
+          .col-6.col-md-2
             ul.list
               li: a(href="#") Barrie
               li: a(href="#") Midland
               li: a(href="#") Muskoka
-          .col-2
+          .col-6.col-md-2
             ul.list
               li: a(href="#") Future students
               li: a(href="#") Current students
               li: a(href="#") Alumni
               li: a(href="#") International
-          .col-2
+          .col-6.col-md-2
             ul.list.social-links
               li: a(href="#") Facebook
               li: a(href="#") LinkedIn
               li: a(href="#") Youtube
               li: a(href="#") Twitter
               li: a(href="#") Instagram
-          .col-4.address
+          .col-12.col-md-4.address
             p One Georgian Dr., Barrie ON L4M 3X9
             p 705.728.1968 
             p inquire@georgiancollege.ca

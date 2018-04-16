@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,500,600");
 body {
   font-family: "Cabin", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,6 +11,9 @@ h1 {
   color: #053861;
   font-size: 52px;
   font-family: 600; }
+  @media screen and (max-width: 720px) {
+    h1 {
+      font-size: 38px; } }
 
 h2 {
   color: #64A70B;
@@ -34,7 +38,9 @@ header {
     padding-left: 40px;
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
-    background-position: left center; }
+    background-position: left center;
+    width: 100%;
+    line-height: normal; }
 
 nav {
   background: #004B87;
@@ -52,11 +58,24 @@ nav {
     background-image: url(../images/lock.svg);
     background-repeat: no-repeat;
     background-position: 5px center; }
+  @media screen and (max-width: 720px) {
+    nav .nav {
+      overflow-x: scroll;
+      display: block;
+      white-space: nowrap; }
+      nav .nav li {
+        display: inline-block; } }
 
 section {
   padding: 80px 0; }
   section.not-found h1 {
     margin-bottom: 30px; }
+  @media screen and (max-width: 720px) {
+    section.not-found {
+      text-align: center; }
+      section.not-found ol {
+        text-align: left;
+        margin-left: -20px !important; } }
   section.not-found h4 {
     color: #053861;
     margin-top: 1.5em;
@@ -98,6 +117,9 @@ section {
       section.broken-link .report .btn {
         background-color: #64A70B;
         border-color: #64A70B; }
+      @media screen and (max-width: 720px) {
+        section.broken-link .report .col-12 {
+          text-align: center !important; } }
   section.useful-links {
     background-color: #F5F5F5; }
     section.useful-links h2 {
@@ -109,6 +131,9 @@ section {
       section.useful-links a:hover {
         opacity: .6;
         text-decoration: none; }
+    @media screen and (max-width: 720px) {
+      section.useful-links ul {
+        margin-bottom: 40px; } }
 
 footer {
   color: #fff;
@@ -116,8 +141,10 @@ footer {
   padding: 60px 0;
   font-size: 14px; }
   footer .logo {
-    margin-left: -34px;
     margin-bottom: 40px; }
+    @media screen and (min-width: 640px) {
+      footer .logo {
+        margin-left: -34px; } }
   footer ul a {
     color: #fff;
     opacity: .6; }
@@ -127,6 +154,8 @@ footer {
       color: #fff; }
   footer .address p {
     margin-bottom: 5px; }
+    footer .address p a {
+      color: #fff; }
   footer .copyright {
     margin-top: 30px;
     opacity: .4; }

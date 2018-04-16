@@ -4,6 +4,8 @@ $darkblue: #053861;
 $light: #FCFCFC;
 $light2: #F5F5F5;
 
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600');
+
 body {
   font-family: "Cabin", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,6 +18,9 @@ h1 {
   color: $darkblue;
   font-size: 52px;
   font-family: 600;
+  @media screen and (max-width: 720px) {
+    font-size: 38px;
+  }
 }
 
 h2 {
@@ -48,6 +53,8 @@ header {
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: left center;
+    width: 100%;
+    line-height: normal;
   }
 }
 
@@ -70,13 +77,36 @@ nav {
     background-repeat: no-repeat;
     background-position: 5px center;
   }
+
+  @media screen and (max-width: 720px) {
+    .nav {
+    overflow-x: scroll;
+    display: block;
+    white-space: nowrap;
+      li {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 section {
+  @media screen and (min-width: 640px) {
+  }
+
   &.not-found {
     h1 {
       margin-bottom: 30px;
     }
+    
+    @media screen and (max-width: 720px) {
+      text-align: center;
+      ol {
+        text-align: left;
+        margin-left: -20px !important;
+      }
+    }
+
 
     h4 {
       color: $darkblue;
@@ -132,6 +162,11 @@ section {
         background-color: $green;
         border-color: $green;
       }
+      @media screen and (max-width: 720px) {
+        .col-12 {
+          text-align: center !important;
+        }
+      }
     }
   }
 
@@ -153,6 +188,12 @@ section {
         text-decoration: none;
       }
     }
+
+    ul {
+      @media screen and (max-width: 720px) {
+        margin-bottom: 40px;
+      }
+    }
   }
 
   padding: 80px 0;
@@ -165,8 +206,10 @@ footer {
   font-size: 14px;
 
   .logo {
-    margin-left: -34px;
     margin-bottom: 40px;
+    @media screen and (min-width: 640px) {
+      margin-left: -34px;
+    }
   }
   
   ul {
@@ -184,6 +227,9 @@ footer {
   .address {
     p {
       margin-bottom: 5px;
+      a {
+        color: #fff;
+      }
     }
   }
 
