@@ -78,24 +78,34 @@ section {
       margin-bottom: 30px;
     }
 
+    h4 {
+      color: $darkblue;
+      margin-top: 1.5em;
+      margin-bottom: .8em;
+    }
+
     ol {
       counter-reset: myCounter;
       margin-left: -91px;
       li {
         list-style: none;
+        margin-bottom: 1em;
+        clear: both;
         &:before {
           counter-increment: myCounter;
           content: counter(myCounter);
           color: white;
           background: $green;
-          display: inline-block;
+          display: block;
+          float: left;
           text-align: center;
-          margin: 5px 15px;
+          margin: 0px 15px;
           font-size: 14px;
           line-height: 23px;
           border-radius: 100px;
           width: 23px;
           height: 23px;
+          margin-bottom: 10px;
         }
       }
     }
